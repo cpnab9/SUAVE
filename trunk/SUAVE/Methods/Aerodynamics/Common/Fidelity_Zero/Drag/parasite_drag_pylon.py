@@ -2,7 +2,8 @@
 # parasite_drag_pylon.py
 # 
 # Created:  Jan 2014, T. Orra
-# Modified: Jan 2016, E. Botero   
+# Modified: Jan 2016, E. Botero
+#           Jul 2024, C. Liu
 
 # ----------------------------------------------------------------------
 #  Imports
@@ -49,7 +50,10 @@ def parasite_drag_pylon(state,settings,geometry):
     conditions = state.conditions 
     
     pylon_factor        = 0.20 # 20% of nacelle drag
-    n_networks          =  len(geometry.networks)  # number of propulsive system in vehicle (NOT # of ENGINES)
+    if(len(geometry.networks) == 0):
+        n_networks = 1
+    else:
+        n_networks          =  len(geometry.networks)  # number of propulsive system in vehicle (NOT # of ENGINES)
     pylon_parasite_drag = 0.00
     pylon_wetted_area   = 0.00
     pylon_cf            = 0.00
