@@ -40,6 +40,7 @@ Contributing Developers
 * Tom Economon
 * Trent Lukaczyk
 * Walter Maier
+* Chengpeng Liu
 
 Contributing Institutions
 -------------------------
@@ -99,7 +100,8 @@ This respository may be cited via BibTex as:
     Momose, T. and
     Economon, T. and
     Lukaczyk, T. and
-    Maier, W.
+    Maier, W. and
+    Liu C.
 },
   title = {SUAVE: An Aerospace Vehicle Environment for Designing Future Aircraft},
   url = {https://github.com/suavecode/SUAVE},
